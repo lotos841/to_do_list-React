@@ -7,12 +7,9 @@
 }
 
 body {
-    background: linear-gradient(
-            90deg,
-            #24e183 0%,
-            #2184e8 100%
-
-    );
+    background: 
+    #24e183;
+    ;
 }
 .todo-app {
     display: flex;
@@ -27,7 +24,9 @@ body {
     padding-bottom: 32px;
 }
 
-h1 {
+
+
+.title {
     margin: 32px 0;
     color: #fff;
     font-size: 24px;
@@ -47,7 +46,7 @@ h1 {
     border-radius: 4px 0 0 4px;
     border: 2px solid #24e183;
     outline: none;
-    width: 320px;
+    width: 220px;
     background: transparent;
     color: #fff;
 }
@@ -145,4 +144,33 @@ h1 {
 
 .edit-icon {
     color: #fff;
+}
+
+
+@media (max-width: 600px) {
+    .todo-app {
+        width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .todo-app {
+        width: 350px;
+    }
+}
+@media (max-width: 360px) {
+    .todo-app {
+        width: 300px;
+    }
+    .todo-input {
+        padding: 10px 25px 10px 10px;
+        width: 160px;
+    }
+    .title {
+        font-size: 15px;
+    }
+
+    .todo-button {
+        padding: 12px;
+    }
 }

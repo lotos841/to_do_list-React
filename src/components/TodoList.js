@@ -42,7 +42,7 @@ const TodoList = () => {
 
     return (
         <div>
-            <h1>Какие планы на сегодня?</h1>
+            <h1 className='title'>Какие планы на сегодня?</h1>
             <TodoForm onSubmit={addTodo}/>
             <Todo
                 todos={todos}
